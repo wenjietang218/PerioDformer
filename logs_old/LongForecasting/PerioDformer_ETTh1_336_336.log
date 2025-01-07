@@ -1,0 +1,75 @@
+Args in experiment:
+Namespace(random_seed=2024, is_training=1, model_id='ETTh1_336_336', model='PerioDformer', data='ETTh1', root_path='./dataset/', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=336, label_len=48, pred_len=336, fc_dropout=0.3, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, w=5, C=24, mlp_num=2, d_model2=32, d_ff2=256, experiment=1, dimension=16, percent=0, embed_type=0, enc_in=7, dec_in=7, c_out=7, d_model=16, n_heads=4, e_layers=3, d_layers=1, d_ff=256, moving_avg=25, factor=1, distil=True, dropout=0.3, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=0, itr=1, train_epochs=60, batch_size=128, patience=100, learning_rate=0.0001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_336_336_PerioDformer_ETTh1_ftM_sl336_ll48_pl336_dm16_nh4_el3_dl1_df256_fc1_ebtimeF_dtTrue_Exp_5_24_2_32_256__exp1_dim16_0_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7969
+val 2545
+test 2545
+0
+Training with all the variates.
+当前GPU已分配内存：0.02501678466796875 GB
+GPU已分配内存的峰值：0.4547457695007324 GB
+Epoch: 1 cost time: 4.36715292930603
+Epoch: 1, Steps: 62 | Train Loss: 0.7199073 Vali Loss: 1.6770129 Test Loss: 0.7231236
+Validation loss decreased (inf --> 1.677013).  Saving model ...
+Updating learning rate to 0.0001
+0
+Training with all the variates.
+当前GPU已分配内存：0.025390625 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 2 cost time: 3.5716609954833984
+Epoch: 2, Steps: 62 | Train Loss: 0.6412025 Vali Loss: 1.3490044 Test Loss: 0.4871004
+Validation loss decreased (1.677013 --> 1.349004).  Saving model ...
+Updating learning rate to 0.0001
+0
+Training with all the variates.
+当前GPU已分配内存：0.02539825439453125 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 3 cost time: 3.726001024246216
+Epoch: 3, Steps: 62 | Train Loss: 0.5234492 Vali Loss: 1.2314030 Test Loss: 0.4233704
+Validation loss decreased (1.349004 --> 1.231403).  Saving model ...
+Updating learning rate to 0.0001
+0
+Training with all the variates.
+当前GPU已分配内存：0.02555084228515625 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 4 cost time: 3.7330005168914795
+Epoch: 4, Steps: 62 | Train Loss: 0.4928944 Vali Loss: 1.2053053 Test Loss: 0.4126636
+Validation loss decreased (1.231403 --> 1.205305).  Saving model ...
+Updating learning rate to 9e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.025177001953125 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 5 cost time: 3.7523107528686523
+Epoch: 5, Steps: 62 | Train Loss: 0.4834333 Vali Loss: 1.1967328 Test Loss: 0.4111854
+Validation loss decreased (1.205305 --> 1.196733).  Saving model ...
+Updating learning rate to 8.1e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.0259857177734375 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 6 cost time: 3.737666606903076
+Epoch: 6, Steps: 62 | Train Loss: 0.4787219 Vali Loss: 1.1846308 Test Loss: 0.4084182
+Validation loss decreased (1.196733 --> 1.184631).  Saving model ...
+Updating learning rate to 7.290000000000001e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.025238037109375 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 7 cost time: 3.724619150161743
+Epoch: 7, Steps: 62 | Train Loss: 0.4754248 Vali Loss: 1.1843429 Test Loss: 0.4068825
+Validation loss decreased (1.184631 --> 1.184343).  Saving model ...
+Updating learning rate to 6.561e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.025390625 GB
+GPU已分配内存的峰值：0.46330928802490234 GB
+Epoch: 8 cost time: 3.7160003185272217
+Epoch: 8, Steps: 62 | Train Loss: 0.4736031 Vali Loss: 1.1763872 Test Loss: 0.4057154
+Validation loss decreased (1.184343 --> 1.176387).  Saving model ...
+Updating learning rate to 5.904900000000001e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.02539825439453125 GB
+GPU已分配内存的峰值：0.46330928802490234 GB

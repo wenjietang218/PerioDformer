@@ -1,0 +1,131 @@
+Args in experiment:
+Namespace(random_seed=2024, is_training=1, model_id='ETTm2_384_192', model='PerioDformer', data='ETTm2', root_path='./dataset/10%/', data_path='ETTm2.csv', features='M', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=384, label_len=48, pred_len=192, w=5, C=48, mlp_num=3, d_model2=128, d_ff2=256, experiment=2, dimension=64, percent=0, fc_dropout=0.2, head_dropout=0.0, patch_len=16, stride=8, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=7, dec_in=7, c_out=7, d_model=32, n_heads=8, e_layers=3, d_layers=1, d_ff=128, moving_avg=25, factor=1, distil=True, dropout=0.2, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=0, itr=1, train_epochs=10, batch_size=128, patience=20, learning_rate=0.0001, des='Exp', loss='mse', lradj='TST', pct_start=0.4, use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use GPU: cuda:0
+线性头的参数量为： 891076
+>>>>>>>start training : ETTm2_384_192_PerioDformer_ETTm2_ftM_sl384_ll48_pl192_dm32_nh8_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_5_48_3_128_256__exp2_dim64_0_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 33985
+val 11329
+test 11329
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1802067756652832 GB
+	iters: 100, epoch: 1 | loss: 0.3666738
+	speed: 0.1883s/iter; left time: 480.3012s
+	iters: 200, epoch: 1 | loss: 0.3496830
+	speed: 0.1750s/iter; left time: 428.9340s
+Epoch: 1 cost time: 47.72205376625061
+Epoch: 1, Steps: 265 | Train Loss: 0.3909424 Vali Loss: 0.1788923 Test Loss: 0.2429674
+Validation loss decreased (inf --> 0.178892).  Saving model ...
+Updating learning rate to 1.808405597638051e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 2 | loss: 0.2486665
+	speed: 0.4298s/iter; left time: 982.5683s
+	iters: 200, epoch: 2 | loss: 0.2170261
+	speed: 0.1755s/iter; left time: 383.7313s
+Epoch: 2 cost time: 46.40939807891846
+Epoch: 2, Steps: 265 | Train Loss: 0.3187805 Vali Loss: 0.1650205 Test Loss: 0.2265532
+Validation loss decreased (0.178892 --> 0.165020).  Saving model ...
+Updating learning rate to 5.207119754111288e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 3 | loss: 0.2188554
+	speed: 0.4305s/iter; left time: 869.9416s
+	iters: 200, epoch: 3 | loss: 0.3852913
+	speed: 0.1755s/iter; left time: 337.1408s
+Epoch: 3 cost time: 46.42510533332825
+Epoch: 3, Steps: 265 | Train Loss: 0.3038438 Vali Loss: 0.1676065 Test Loss: 0.2231333
+EarlyStopping counter: 1 out of 20
+Updating learning rate to 8.601655784941133e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 4 | loss: 0.2591260
+	speed: 0.4304s/iter; left time: 755.7023s
+	iters: 200, epoch: 4 | loss: 0.3035907
+	speed: 0.1756s/iter; left time: 290.7263s
+Epoch: 4 cost time: 46.42523431777954
+Epoch: 4, Steps: 265 | Train Loss: 0.2915907 Vali Loss: 0.1678947 Test Loss: 0.2241512
+EarlyStopping counter: 2 out of 20
+Updating learning rate to 9.999990240139126e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 5 | loss: 0.4096199
+	speed: 0.4304s/iter; left time: 641.7502s
+	iters: 200, epoch: 5 | loss: 0.3029478
+	speed: 0.1755s/iter; left time: 244.1237s
+Epoch: 5 cost time: 46.41715145111084
+Epoch: 5, Steps: 265 | Train Loss: 0.2792123 Vali Loss: 0.1733809 Test Loss: 0.2383711
+EarlyStopping counter: 3 out of 20
+Updating learning rate to 9.325181658008551e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 6 | loss: 0.2488925
+	speed: 0.4303s/iter; left time: 527.6072s
+	iters: 200, epoch: 6 | loss: 0.2397315
+	speed: 0.1755s/iter; left time: 197.6217s
+Epoch: 6 cost time: 46.430383920669556
+Epoch: 6, Steps: 265 | Train Loss: 0.2688759 Vali Loss: 0.1697534 Test Loss: 0.2289907
+EarlyStopping counter: 4 out of 20
+Updating learning rate to 7.491449502480531e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 7 | loss: 0.2377652
+	speed: 0.4305s/iter; left time: 413.6656s
+	iters: 200, epoch: 7 | loss: 0.2413487
+	speed: 0.1755s/iter; left time: 151.0867s
+Epoch: 7 cost time: 46.43316864967346
+Epoch: 7, Steps: 265 | Train Loss: 0.2614800 Vali Loss: 0.1697065 Test Loss: 0.2345044
+EarlyStopping counter: 5 out of 20
+Updating learning rate to 4.9901408237637795e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 8 | loss: 0.1925805
+	speed: 0.4304s/iter; left time: 299.5781s
+	iters: 200, epoch: 8 | loss: 0.2489328
+	speed: 0.1756s/iter; left time: 104.6355s
+Epoch: 8 cost time: 46.459941387176514
+Epoch: 8, Steps: 265 | Train Loss: 0.2566475 Vali Loss: 0.1689717 Test Loss: 0.2314525
+EarlyStopping counter: 6 out of 20
+Updating learning rate to 2.491479262341408e-05
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 9 | loss: 0.2112420
+	speed: 0.4309s/iter; left time: 185.7230s
+	iters: 200, epoch: 9 | loss: 0.3011206
+	speed: 0.1755s/iter; left time: 58.1045s
+Epoch: 9 cost time: 46.44247221946716
+Epoch: 9, Steps: 265 | Train Loss: 0.2536784 Vali Loss: 0.1702217 Test Loss: 0.2324463
+EarlyStopping counter: 7 out of 20
+Updating learning rate to 6.649791657552277e-06
+0
+Training with all the variates.
+当前GPU已分配内存：0.041362762451171875 GB
+GPU已分配内存的峰值：1.1916661262512207 GB
+	iters: 100, epoch: 10 | loss: 0.2666319
+	speed: 0.4308s/iter; left time: 71.5206s
+	iters: 200, epoch: 10 | loss: 0.2169335
+	speed: 0.1756s/iter; left time: 11.5906s
+Epoch: 10 cost time: 46.46947622299194
+Epoch: 10, Steps: 265 | Train Loss: 0.2522051 Vali Loss: 0.1702157 Test Loss: 0.2332165
+EarlyStopping counter: 8 out of 20
+Updating learning rate to 4.975986087531877e-10
+>>>>>>>testing : ETTm2_384_192_PerioDformer_ETTm2_ftM_sl384_ll48_pl192_dm32_nh8_el3_dl1_df128_fc1_ebtimeF_dtTrue_Exp_5_48_3_128_256__exp2_dim64_0_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 11329
+test-mse:0.22655333578586578, mae:0.29965463280677795, rse:0.38673266768455505
