@@ -12,7 +12,7 @@ Specifically, PerioDformer contains three key designs:
 - **Intra-period and Inter-period Encoders**: Intra-period tokens are the input for the intra-period encoder, which is responsible for capturing the temporal dependency between different phases within a period. Inter-period tokens are the input for another encoder, called inter-period encoder, which has the ability to capture the global temporal dependency among different periods.
 - **Accurate Predictors**: Accurate predictors consists of multiple single-period predictors, and each single-period predictor is a multi-layer perceptron or a fully connected layer.
 
-![model_structure.jpg](pic/model_structure.jpg)
+![model_structure_resize.jpg](pic/model_structure_resize.jpg)
 
 # Get Start
 1.Install Python>=3.9 and the requirements
@@ -51,21 +51,20 @@ We experiment on six benchmarks, covering five main-stream applications.
 Compared with other forecasters, PerioDformer achieves state-of-the-art performance at forecasting both high-dimensional and low-dimensional time series. Specifically, PerioDformer exhibits an average MSE and MAE reduction 4.898\% and 2.597\% for ETTh1.
 Additionally, PerioDformer tends to perform better with longer prediction length, achieving mostly optimal results when the prediction length is 720 and 960.
 
-![main_results.jpg](pic/main_results.jpg)
+![main_results_resize.jpg](pic/main_results_resize.jpg)
 
 # Baselines
 
 We will keep adding series forecasting models to expand this repo:
 
+- [x] TimeMixer
 - [x] iTransformer
 - [x] PatchTST
 - [x] RLinear
 - [x] DLinear
 - [x] TimesNet
 - [x] Crossformer
-- [x] MiCN
 - [x] FiLM
-- [x] FEDformer
 
 # Data Processing
 
