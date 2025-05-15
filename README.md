@@ -1,17 +1,16 @@
 # PerioDformer
-We propose periodic Division Enhanced Transformer (PeriD
+We propose periodic Disposition Enhanced Transformer (PeriD
 former) for time series forecasting, which transforming input series into input
  tokens with more semantic meaning.
 Experimental data show that PeriDformer achieves state-of-the
 art performance on six challenging real-world datasets.
 
 # Model Structure
-Specifically, PerioDformer contains four key designs:
+Specifically, PerioDformer contains three key designs:
 
-- **Periodic Division**: PerioDformer first analyzes the natural periodicity of the sequence and subsequently partitions the time series into period blocks based on this identified natural period. We concatenate the periodic blocks into tokens for two vanilla Transformer encoders, which contain self-attention architecture.
-- **Intra-period and Inter-period Encoders**: Intra-period tokens are the input for the intra-period encoder, which is responsible for capturing the temporal dependency between different phases within a period.
+- **Periodic Disposition**: PerioDformer first analyzes the natural periodicity of the sequence and subsequently partitions the time series into period blocks based on this identified natural period. We concatenate the periodic blocks into tokens for two vanilla Transformer encoders, which contain self-attention architecture.
+- **Intra-period and Inter-period Encoders**: Intra-period tokens are the input for the intra-period encoder, which is responsible for capturing the temporal dependency between different phases within a period. Inter-period tokens are the input for another encoder, called inter-period encoder, which has the ability to capture the global temporal dependency among different periods.
 - **Accurate Predictors**: Accurate predictors consists of multiple single-period predictors, and each single-period predictor is a multi-layer perceptron or a fully connected layer.
-- **Efficient Channel-independence**: We have introduced the efficient channel-independence as a means to substantially reduce the model's memory usage during training.
 
 ![model_structure.jpg](pic/model_structure.jpg)
 
